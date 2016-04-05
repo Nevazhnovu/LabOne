@@ -18,7 +18,9 @@ namespace Lab1
             try {
                 Console.WriteLine("Enter your URL: ");
                 string url = Console.ReadLine();
-            	
+            	Console.WriteLine("Protocol: " + url.Substring(0, url.IndexOf("://")));
+                url = url.Substring(url.IndexOf("://") + 3);
+                
                 Console.ReadKey();
             }
             catch (Exception ex)
