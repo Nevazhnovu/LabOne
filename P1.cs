@@ -16,7 +16,10 @@ namespace Lab1
         static void Main(string[] args)
         {
             try {
-                
+                Console.WriteLine("Enter your URL: ");
+                string url = Console.ReadLine();
+            	
+                Console.ReadKey();
             }
             catch (Exception ex)
             {
